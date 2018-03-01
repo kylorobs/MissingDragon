@@ -4,35 +4,6 @@
   <link href="./resources/css/style.css" type= "text/css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="/resources/js/dragon.js"></script>
-  <script type="text/javascript" src="/resources/js/jquery.twitter.feed.js"></script>
-  <script type="text/JavaScript">
-    $(document).ready(function() {
-        $('#twitter-feed').dcTwitterFeed({
-            id: 'westminstersu',
-            tweetId: 'westminstersu'
-        });
-    });
-</script>
-
-<script type="text/JavaScript">
-    $(document).ready(function() {
-        $('#twitter-feed').dcTwitterFeed({
-            id: 'westminstersu',
-            tweetId: 'westminstersu',
-            retweets: false,
-            replies: false,
-            avatar: false,
-            results: 20,
-            images: 'small'
-        });
-    });
-
-</script>
 </head>
 <body>
 
@@ -109,6 +80,35 @@
 
 
 
+
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/resources/js/jquery.twitter.feed.js"></script>
+  <script type="text/JavaScript">
+    $(document).ready(function() {
+        $('#twitter-feed').dcTwitterFeed({
+            id:'WestminsterSU',
+            tweetId:'WestminsterSU'
+        });
+    });
+</script>
+
+<script type="text/JavaScript">
+    $(document).ready(function() {
+        $('#twitter-feed').dcTwitterFeed({
+            id: 'westminstersu',
+            tweetId: 'westminstersu',
+            retweets: false,
+            replies: false,
+            avatar: false,
+            results: 20,
+            images: 'small'
+        });
+    });
+
+</script>
 
 
 </body>
