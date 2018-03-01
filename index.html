@@ -1,0 +1,119 @@
+<html>
+<head>
+  <title>Missing Dragon</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="./resources/css/reset.css" type= "text/css" rel="stylesheet">
+  <link href="./resources/css/style.css" type= "text/css" rel="stylesheet">
+  <link rel="icon" href="./favicon.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+<body>
+
+<div id="smokey-main">
+  <div id="bannertext">
+    <h1> Find Smokey </h1>
+    <a href="#gallery" class="btn btn-primary btn-lg right-col">See More</a>
+  </div>
+</div>
+
+
+    <div class="dragonCTA container">
+      <div class="row">
+       <h3 class="col-xs-12">Have you seen Smokey?</h3>
+       <a href="#gallery" class="btn btn-primary btn-lg right-col">See More</a>
+      </div>
+    </div>
+
+<!--  2 COLUMN LATEST AND NEWS  -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 dragon-box" id="dragon-latest">
+    </div>
+    <div class="col-xs-12 col-md-5 dragon-box" id="dragon-news">
+    <span> Latest Dragon News </span>
+    </div>
+  </div>
+</div>
+
+<!--  LATEST PICTURES -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6" >
+      <p> Row 1, Cols 1-6 </p>
+    </div>
+    <div class="col-xs-12col-md-6">
+      <p> Row 1, Cols 7-12 </p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <p> Row 1, Cols 7-12 </p>
+    </div>
+  </div>
+
+<!-- second row-->
+<div class="row">
+  <div class="col-xs-12 col-md-6">
+    <p> Row 1, Cols 1-6 </p>
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <p> Row 1, Cols 7-12 </p>
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <p> Row 1, Cols 7-12 </p>
+  </div>
+</div>
+
+<!-- TWITTER FEEDS -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <p> Row 1, Cols 1-6 </p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <p> Row 1, Cols 7-12 </p>
+    </div>
+  </div>
+</div>
+
+<div id="twitter-feed"></div>
+
+
+
+
+
+
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./resources/js/dragon.js"></script>
+  <script type="text/javascript" src="./resources/js/jquery.twitter.feed.js"></script>
+  <script type="text/JavaScript">
+    $(document).ready(function() {
+        $('#twitter-feed').dcTwitterFeed({
+            id: 'westminstersu',
+            tweetId: 'westminstersu'
+        });
+    });
+</script>
+
+<script type="text/JavaScript">
+    $(document).ready(function() {
+        $('#twitter-feed').dcTwitterFeed({
+            id: 'westminstersu',
+            tweetId: 'westminstersu',
+            retweets: false,
+            replies: false,
+            avatar: false,
+            results: 20,
+            images: 'small'
+        });
+    });
+
+</script>
+
+
+</body>
+</html>
