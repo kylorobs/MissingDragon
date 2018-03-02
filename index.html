@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>Missing Dragon</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <link href="./resources/css/style.css" type= "text/css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -10,17 +11,35 @@
 <div id="smokey-main">
   <div id="bannertext">
     <h1> Find Smokey </h1>
-    <a href="#gallery" class="btn btn-primary btn-lg right-col">See More</a>
+    <a id="find-smokey-button" class="btn btn-primary btn-lg ">Help us get him back!</a>
   </div>
 </div>
 
-
-    <div class="dragonCTA container">
+<!--  THE DRAGON CONTAINER  -->
+<div class="dragon-background">
+    <div class="dragonCTA container-fluid">
       <div class="row">
        <h3 class="col-xs-12">Have you seen Smokey?</h3>
-       <a href="#gallery" class="btn btn-primary btn-lg right-col">See More</a>
+       <div class="dragon-strap">
+         <p> Smokey the Dragon, our beloved UWSU Dragons mascot, mysteriously went missing on Monday 5th March at around 16:35pm</p>
+         <p> You can watch the CCTV footage below. Please comment when last you saw him, or if you have any ideas of his whereabouts</p>
+      </div>
+       <a  id="dragon-translator" class="btn btn-primary btn-lg right-col">Use the Dragon Translator</a>
       </div>
     </div>
+
+    <div class="dragon-container">
+        <div id="Translator" class="dragon-tool">
+          <input id="dragon-input" type="text" placeholder="Copy and paste the dragon language">
+         <div class="dragon-button">Translate</div>
+        </div>
+
+        <div id="translated" class="dragon-tool">
+          <span class="dragon-speak"> </span>
+        </div>
+
+      <p class="dragon-copyright"> © Daenerys Targaryen </p>
+      </div>
 
 <!--  2 COLUMN LATEST AND NEWS  -->
 <div class="container">
@@ -29,53 +48,46 @@
     </div>
     <div class="col-xs-12 col-md-5 dragon-box" id="dragon-news">
     <span> Latest Dragon News </span>
+    <h5>Use the Dragon Translator</h5>
+    <h5>Harry Potter provides a Dragon Translator</h5>
+    <h5>Harry Potter wins the poll</h5>
+    <h5> Poll for a dragon-speaker</h5>
+    <div class="smokey-tweets">
+      <i class="fa fa-twitter fa-4x"></i>
+      <p> See Smokey's latest Tweets </p>
+    </div>
     </div>
   </div>
+</div>
+
 </div>
 
 <!--  LATEST PICTURES -->
-<div class="container">
+<div class="dragonCTA container-fluid">
   <div class="row">
-    <div class="col-xs-12 col-md-6" >
-      <p> Row 1, Cols 1-6 </p>
-    </div>
-    <div class="col-xs-12col-md-6">
-      <p> Row 1, Cols 7-12 </p>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <p> Row 1, Cols 7-12 </p>
-    </div>
-  </div>
+   <h3 class="col-xs-12">CCTV footage of Smokey leaving</h3>
+   <div class="dragon-strap">
+     <p> Below is Smokey's last known where-abouts. We need him back soon. If you have any ideas comment below or tweet with the hashtag #findSmokey</p>
+</div>
+<div class="YTvideo-container">
+<div class="YTvideo">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZfCq0QVvrSY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
 
-<!-- second row-->
-<div class="row">
-  <div class="col-xs-12 col-md-6">
-    <p> Row 1, Cols 1-6 </p>
-  </div>
-  <div class="col-xs-12 col-md-6">
-    <p> Row 1, Cols 7-12 </p>
-  </div>
-  <div class="col-xs-12 col-md-6">
-    <p> Row 1, Cols 7-12 </p>
-  </div>
-</div>
-</div>
 
 <!-- TWITTER FEEDS -->
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-md-6">
+    <div class="col-xs-12 col-md-6" id="dragontwitter">
+      <a class="twitter-timeline" href="https://twitter.com/UWSUDragons?ref_src=twsrc%5Etfw">Tweets by UWSUDragons</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-    <div class="col-xs-12 col-md-6">
-      <p> Row 1, Cols 7-12 </p>
+    <div class="col-xs-12 col-md-6" id="sutwitter">
+      <a class="twitter-timeline" href="https://twitter.com/WestminsterSU?ref_src=twsrc%5Etfw">Tweets by WestminsterSU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 </div>
 
-
-
-
-  <div id="twitter-feed"></div>
 
 
 
@@ -87,31 +99,7 @@
 
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./resources/js/jquery.twitter.feed.js"></script>
-  <script type="text/JavaScript">
-    $(document).ready(function() {
-        $('#twitter-feed').dcTwitterFeed({
-            id:'WestminsterSU',
-            tweetId:'WestminsterSU'
-        });
-    });
-</script>
-
-<script type="text/JavaScript">
-    $(document).ready(function() {
-        $('#twitter-feed').dcTwitterFeed({
-            id: 'westminstersu',
-            tweetId: 'westminstersu',
-            retweets: false,
-            replies: false,
-            avatar: false,
-            results: 20,
-            images: 'small'
-        });
-    });
-
-</script>
-
+  <script type="text/javascript" src="./resources/js/main.js"></script>
 
 </body>
 </html>
