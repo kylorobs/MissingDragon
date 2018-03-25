@@ -51,7 +51,10 @@ $('#find-smokey-button').on('click', function() {
   $('.image-link').magnificPopup({type:'image'});
   $('.dragonGallery').magnificPopup({
     delegate: 'a', // child items selector, by clicking on it popup will open
-    type: 'image'
+    type: 'image',
+  gallery:{
+    enabled:true
+  }
    });
 
 });
