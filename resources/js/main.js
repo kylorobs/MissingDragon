@@ -47,4 +47,13 @@ $('#find-smokey-button').on('click', function() {
 
   });
 
+  // Initialise Magnific popup
+  $('.image-link').magnificPopup({type:'image'});
+  $('.dragonImage').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image'
+  // other options
+  gallery:{enabled:true}
+});
+
 });
