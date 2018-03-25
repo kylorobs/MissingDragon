@@ -239,6 +239,7 @@ height: 100%
 .dragonROW {
   display: flex;
   justify-content: space-around;
+  flex-wrap:wrap;
   height: auto;
 }
 
@@ -320,11 +321,11 @@ margin: 1em 0;
   padding: 0;
 }
 
-#dragontwitter {
+#sutwitter {
   padding: 0;
 }
 
-#sutwitter {
+#dragontwitter {
   display: none;
 }
 }
